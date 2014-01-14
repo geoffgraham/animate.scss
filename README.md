@@ -16,7 +16,7 @@ The default import includes all animations.
 @import "animate.scss";
 ```
 
-Want to pick and choose which animations are imported? Go into 'animate.scss' and comment out what you don't need.
+Want to pick and choose which animations are imported? Go into animate.scss and comment out what you don't need.
 
 ```
 // Always required
@@ -36,21 +36,21 @@ Want to pick and choose which animations are imported? Go into 'animate.scss' an
   "_rotating-exits/rotating-exits.scss",
   "_specials/specials.scss";
 ```
-You only want one of two of the animations? You can '@import' the specific partials in 'animate.scss' instead (Example: '@import "_attention/_bounce";').
+You only want one of two of the animations? You can `@import` the specific partials in animate.scss instead (Example: `@import "_attention/_bounce";`).
 
 ## Usage
 
-Once your files have been added to your project and you've customized your '@imports', you can start including the animations directly to your classes.
+Once your files have been added to your project and you've customized your `@imports`, you can start including the animations directly to your classes.
 
-'''
+```
 .your-class-name {
   @include bounceIn();
 }
-'''
+```
 
-The mixin includes configurable options to customize the 'delay', 'duration', 'function' and 'fill-mode' of your animations.
+The mixin includes configurable options to customize the `delay`, `duration`, `function` and `fill-mode` of your animations.
 
-'''
+```
 .your-class-name {
   @include bounceIn(
     $duration: 1s,
@@ -59,7 +59,11 @@ The mixin includes configurable options to customize the 'delay', 'duration', 'f
     $fill-mode: both
   );
 }
-'''
+```
+
+## Just Want the CSS?
+
+You can have that too. Link up animate.css to your document `<head>` and add the animations like you would any class name.
 
 ## Licenses
 
