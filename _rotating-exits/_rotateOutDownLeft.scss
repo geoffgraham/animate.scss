@@ -23,7 +23,7 @@
 	100% {transform-origin: left bottom; transform: rotate(90deg); opacity: 0;}
 }
 
-@mixin rotateOutDownLeft($duration, $delay, $function, $fill, $visibility) {
+@mixin rotateOutDownLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(rotateOutDownLeft);
   @include duration($duration);
   @include delay($delay);

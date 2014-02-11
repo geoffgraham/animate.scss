@@ -23,7 +23,7 @@
   100% {opacity: 0; transform: translateX(20px);}
 }
 
-@mixin fadeOutRight($duration, $delay, $function, $fill, $visibility) {
+@mixin fadeOutRight($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(fadeOutRight);
   @include duration($duration);
   @include delay($delay);

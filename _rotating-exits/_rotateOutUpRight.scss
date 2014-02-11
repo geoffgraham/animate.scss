@@ -23,7 +23,7 @@
   100% {transform-origin: right bottom; transform: rotate(90deg); opacity: 0;}
 }
 
-@mixin rotateOutUpRight($duration, $delay, $function, $fill, $visibility) {
+@mixin rotateOutUpRight($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(rotateOutUpRight);
   @include duration($duration);
   @include delay($delay);

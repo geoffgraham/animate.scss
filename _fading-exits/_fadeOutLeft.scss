@@ -23,7 +23,7 @@
   100% {opacity: 0; transform: translateX(-20px);}
 }
 
-@mixin fadeOutLeft($duration, $delay, $function, $fill, $visibility) {
+@mixin fadeOutLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(fadeOutLeft);
   @include duration($duration);
   @include delay($delay);

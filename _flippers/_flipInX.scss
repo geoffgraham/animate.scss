@@ -23,7 +23,7 @@
     100% {transform: perspective(400px) rotateX(0deg); opacity: 1;}
 }
 
-@mixin flipInX($duration, $delay, $function, $fill, $visibility) {
+@mixin flipInX($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(flipInX);
   @include duration($duration);
   @include delay($delay);

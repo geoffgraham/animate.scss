@@ -25,7 +25,7 @@
   100% { opacity: 1; transform: translateX(0px) rotate(0deg);}
 }
 
-@mixin rollIn($duration, $delay, $function, $fill, $visibility) {
+@mixin rollIn($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(rollIn);
   @include duration($duration);
   @include delay($delay);

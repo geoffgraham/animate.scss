@@ -25,7 +25,7 @@
   100% {opacity: 0; transform: translateX(100%) rotate(120deg);}
 }
 
-@mixin rollOut($duration, $delay, $function, $fill, $visibility) {
+@mixin rollOut($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(rollOut);
   @include duration($duration);
   @include delay($delay);

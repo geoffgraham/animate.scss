@@ -39,7 +39,7 @@
 	100% { transform: rotate(0deg); }
 }
 
-@mixin swing($duration, $delay, $function, $fill, $visibility) {
+@mixin swing($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include transform-origin(top center);
 	@include animation-name(swing);
   @include duration($duration);

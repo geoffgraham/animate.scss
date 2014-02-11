@@ -23,7 +23,7 @@
   100% { transform: translateX(100%) skewX(-30deg); opacity: 0;}
 }
 
-@mixin lightSpeedOut($duration, $delay, $fill, $visibility) {
+@mixin lightSpeedOut($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(lightSpeedOut);
   @include function(ease-in);
   @include duration($duration);

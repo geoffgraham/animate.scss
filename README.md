@@ -44,11 +44,11 @@ Once your files have been added to your project and you've customized your `@imp
 
 ```
 .your-class-name {
-  @include bounceIn($duration, $delay, $function, $fill, $visibility);
+  @include bounceIn();
 }
 ```
 
-Each option is configurable:
+The mixin includes configurable options to customize the `delay`, `duration`, `function` and `fill-mode` of your animations.
 
 ```
 .your-class-name {

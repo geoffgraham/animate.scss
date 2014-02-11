@@ -28,7 +28,7 @@
   100% {opacity: 0; transform: translateX(2000px);}
 }
 
-@mixin bounceOutRight($duration, $delay, $function, $fill, $visibility) {
+@mixin bounceOutRight($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(bounceOutRight);
   @include duration($duration);
   @include delay($delay);

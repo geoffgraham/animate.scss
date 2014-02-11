@@ -28,7 +28,7 @@
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
-@mixin shake($duration, $delay, $function, $fill, $visibility) {
+@mixin shake($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(shake);
 	@include duration($duration);
 	@include delay($delay);

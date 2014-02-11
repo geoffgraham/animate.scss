@@ -27,7 +27,7 @@
 	60% {transform: translateY(-15px);}
 }
 
-@mixin bounce($duration, $delay, $function, $fill, $visibility) {
+@mixin bounce($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(bounce);
   @include duration($duration);
 	@include delay($delay);

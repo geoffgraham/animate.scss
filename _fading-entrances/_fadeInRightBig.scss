@@ -23,7 +23,7 @@
   100% {opacity: 1; transform: translateX(0);}
 }
 
-@mixin fadeInRightBig($duration, $delay, $function, $fill, $visibility) {
+@mixin fadeInRightBig($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(fadeInRightBig);
   @include duration($duration);
   @include delay($delay);
