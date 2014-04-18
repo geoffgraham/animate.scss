@@ -5,7 +5,7 @@
   "authors": [
     "geoffgraham <geoff@geoffgraham.me>"
   ],
-  "description": "An up to date port of Dan Eden's Animate.css to SASS",
+  "description": "An SASS port of Dan Eden's Animate.css",
   "main": ["animate.scss"],
   "keywords": [
     "animate.scss",
