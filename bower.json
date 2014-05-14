@@ -3,9 +3,9 @@
   "version": "3.1.0",
   "homepage": "https://github.com/geoffgraham/animate.scss",
   "authors": [
-    "geoffgraham <geoff@geoffgraham.me>"
+    "geoffgraham <@geoffreygraham>"
   ],
-  "description": "An SASS port of Dan Eden's Animate.css",
+  "description": "A SASS port of Dan Eden's Animate.css",
   "main": ["animate.scss"],
   "keywords": [
     "animate.scss",
