@@ -1,0 +1,33 @@
+@-webkit-keyframes slideInUp {
+	0% {opacity: 0; transform: translateY(2000px);}
+	100% {transform: translateY(0);}
+}
+
+@-moz-keyframes slideInUp {
+	0% {opacity: 0; transform: translateY(2000px);}
+	100% {transform: translateY(0);}
+}
+
+@-ms-keyframes slideInUp {
+	0% {opacity: 0; transform: translateY(2000px);}
+	100% {transform: translateY(0);}
+}
+
+@-o-keyframes slideInUp {
+	0% {opacity: 0; transform: translateY(2000px);}
+	100% {transform: translateY(0);}
+}
+
+@keyframes slideInUp {
+	0% {opacity: 0; transform: translateY(2000px);}
+	100% {transform: translateY(0);}
+}
+
+@mixin slideInUp($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+	@include animation-name(slideInUp);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}

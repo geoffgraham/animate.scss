@@ -1,0 +1,33 @@
+@-webkit-keyframes slideOutDown {
+	0% {transform: translateY(0);}
+	100% {opacity: 0; transform: translateY(2000px);}
+}
+
+@-moz-keyframes slideOutDown {
+	0% {transform: translateY(0);}
+	100% {opacity: 0; transform: translateY(2000px);}
+}
+
+@-ms-keyframes slideOutDown {
+	0% {transform: translateY(0);}
+	100% {opacity: 0; transform: translateY(2000px);}
+}
+
+@-o-keyframes slideOutDown {
+	0% {transform: translateY(0);}
+	100% {opacity: 0; transform: translateY(2000px);}
+}
+
+@keyframes slideOutDown {
+	0% {transform: translateY(0);}
+	100% {opacity: 0; transform: translateY(2000px);}
+}
+
+@mixin slideOutDown($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+	@include animation-name(slideOutDown);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}

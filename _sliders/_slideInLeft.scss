@@ -1,0 +1,33 @@
+@-webkit-keyframes slideInLeft {
+	0% {opacity: 0; transform: translateX(-2000px);}
+	100% {transform: translateX(0);}
+}
+
+@-moz-keyframes slideInLeft {
+	0% {opacity: 0; transform: translateX(-2000px);}
+	100% {transform: translateX(0);}
+}
+
+@-ms-keyframes slideInLeft {
+	0% {opacity: 0; transform: translateX(-2000px);}
+	100% {transform: translateX(0);}
+}
+
+@-o-keyframes slideInLeft {
+	0% {opacity: 0; transform: translateX(-2000px);}
+	100% {transform: translateX(0);}
+}
+
+@keyframes slideInLeft {
+	0% {opacity: 0; transform: translateX(-2000px);}
+	100% {transform: translateX(0);}
+}
+
+@mixin slideInLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+	@include animation-name(slideInLeft);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
