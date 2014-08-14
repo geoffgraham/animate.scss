@@ -27,10 +27,3 @@
   "_specials/specials.scss",
   "_zooming-entrances/zooming-entrances.scss",
   "_zooming-exits/zooming-exits.scss";
-  
-  .foo {
-    background: tomato;
-    height: 200px;
-    width: 200px;
-    @include bounce;
-  }

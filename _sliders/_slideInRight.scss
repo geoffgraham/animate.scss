@@ -1,24 +1,4 @@
-@-webkit-keyframes slideInRight {
-	0% {opacity: 0; transform: translateX(2000px);}
-	100% {transform: translateX(0);}
-}
-
-@-moz-keyframes slideInRight {
-	0% {opacity: 0; transform: translateX(2000px);}
-	100% {transform: translateX(0);}
-}
-
-@-ms-keyframes slideInRight {
-	0% {opacity: 0; transform: translateX(2000px);}
-	100% {transform: translateX(0);}
-}
-
-@-o-keyframes slideInRight {
-	0% {opacity: 0; transform: translateX(2000px);}
-	100% {transform: translateX(0);}
-}
-
-@keyframes slideInRight {
+@include keyframes(slideInRight) {
 	0% {opacity: 0; transform: translateX(2000px);}
 	100% {transform: translateX(0);}
 }

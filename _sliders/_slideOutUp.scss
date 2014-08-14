@@ -1,24 +1,4 @@
-@-webkit-keyframes slideOutUp {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(-2000px);}
-}
-
-@-moz-keyframes slideOutUp {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(-2000px);}
-}
-
-@-ms-keyframes slideOutUp {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(-2000px);}
-}
-
-@-o-keyframes slideOutUp {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(-2000px);}
-}
-
-@keyframes slideOutUp {
+@include keyframes(slideOutUp) {
 	0% {transform: translateY(0);}
 	100% {opacity: 0; transform: translateY(-2000px);}
 }

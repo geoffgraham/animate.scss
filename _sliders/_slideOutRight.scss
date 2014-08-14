@@ -1,24 +1,4 @@
-@-webkit-keyframes slideOutRight {
-	0% {transform: translateX(0);}
-	100% {opacity: 0; transform: translateX(2000px);}
-}
-
-@-moz-keyframes slideOutRight {
-	0% {transform: translateX(0);}
-	100% {opacity: 0; transform: translateX(2000px);}
-}
-
-@-ms-keyframes slideOutRight {
-	0% {transform: translateX(0);}
-	100% {opacity: 0; transform: translateX(2000px);}
-}
-
-@-o-keyframes slideOutRight {
-	0% {transform: translateX(0);}
-	100% {opacity: 0; transform: translateX(2000px);}
-}
-
-@keyframes slideOutRight {
+@include keyframes(slideOutRight) {
 	0% {transform: translateX(0);}
 	100% {opacity: 0; transform: translateX(2000px);}
 }

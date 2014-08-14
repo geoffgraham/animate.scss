@@ -1,24 +1,4 @@
-@-webkit-keyframes slideOutDown {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(2000px);}
-}
-
-@-moz-keyframes slideOutDown {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(2000px);}
-}
-
-@-ms-keyframes slideOutDown {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(2000px);}
-}
-
-@-o-keyframes slideOutDown {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(2000px);}
-}
-
-@keyframes slideOutDown {
+@include keyframes(slideOutDown) {
 	0% {transform: translateY(0);}
 	100% {opacity: 0; transform: translateY(2000px);}
 }
