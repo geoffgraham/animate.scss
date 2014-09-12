@@ -1,6 +1,6 @@
 # Animate.scss
 
-This is a port of Dan Eden's [Animate.css](https://daneden.me/animate/) for SASS.
+This is a port of Dan Eden's [Animate.css](http://daneden.github.io/animate.css/) for SASS.
 
 ## Doesn't this already exist somewhere else?
 
