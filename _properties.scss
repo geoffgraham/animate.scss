@@ -80,23 +80,23 @@ $visibilityDefault: hidden !default;
 }
 
 @mixin keyframes($animation-name) {
-  @-webkit-keyframes $animation-name {
+  @-webkit-keyframes #{$animation-name} {
     @content;
   }
 
-  @-moz-keyframes $animation-name {
-    @content;
-  }
-  
-  @-ms-keyframes $animation-name {
-    @content;
-  }
-  
-  @-o-keyframes $animation-name {
+  @-moz-keyframes #{$animation-name} {
     @content;
   }
 
-  @keyframes $animation-name {
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
     @content;
   }
 }
