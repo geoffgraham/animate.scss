@@ -5,8 +5,9 @@
   100% {-webkit-transform: translateX(0);}
 }
 
-@mixin bounceInRight($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin bounceInRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(bounceInRight);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

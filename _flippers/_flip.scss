@@ -6,9 +6,10 @@
   100% {transform: perspective(400px) scale(1); animation-timing-function: ease-in;}
 }
 
-@mixin flip($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin flip($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include transform-style(preserve-3d);
   @include animation-name(flip);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

@@ -5,8 +5,9 @@
 	100% { transform: translateX(0%) skewX(0deg); opacity: 1;}
 }
 
-@mixin lightSpeedIn($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin lightSpeedIn($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(lightSpeedIn);
+  @include count($count);
 	@include function(ease-out);
   @include duration($duration);
   @include delay($delay);

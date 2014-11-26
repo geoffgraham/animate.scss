@@ -4,9 +4,10 @@
 	60% {transform: translateY(-15px);}
 }
 
-@mixin bounce($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin bounce($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(bounce);
-  @include duration($duration);
+	@include count($count);
+   @include duration($duration);
 	@include delay($delay);
 	@include function($function);
 	@include fill-mode($fill);

@@ -10,8 +10,9 @@
   }
 }
 
-@mixin zoomOutLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin zoomOutLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(zoomOutLeft);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

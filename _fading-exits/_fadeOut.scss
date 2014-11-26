@@ -3,8 +3,9 @@
 	100% {opacity: 0;}
 }
 
-@mixin fadeOut($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin fadeOut($count: $coutnDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(fadeOut);
+	@include count($count);
 	@include duration($duration);
 	@include delay($delay);
 	@include function($function);

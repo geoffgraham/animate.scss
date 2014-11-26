@@ -5,8 +5,9 @@
   100% {-webkit-transform: translateY(0);}
 }
 
-@mixin bounceInUp($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin bounceInUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(bounceInUp);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

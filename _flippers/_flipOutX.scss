@@ -3,8 +3,9 @@
   100% {transform: perspective(400px) rotateX(90deg); opacity: 0;}
 }
 
-@mixin flipOutX($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin flipOutX($count: $countDefult, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(flipOutX);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

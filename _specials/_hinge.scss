@@ -26,8 +26,9 @@
   }
 }
 
-@mixin hinge($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin hinge($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(hinge);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

@@ -6,9 +6,10 @@
 	100% {-webkit-transform: scale(1) rotate(0);}
 }
 
-@mixin tada($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin tada($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(tada);
-  @include duration($duration);
+	@include count($count);
+   @include duration($duration);
 	@include delay($delay);
 	@include function($function);
 	@include fill-mode($fill);

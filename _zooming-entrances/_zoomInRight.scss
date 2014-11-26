@@ -11,8 +11,9 @@
   }
 }
 
-@mixin zoomInRight($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin zoomInRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(zoomInRight);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);
