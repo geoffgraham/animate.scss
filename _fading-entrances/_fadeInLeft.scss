@@ -3,8 +3,9 @@
   100% {opacity: 1; -webkit-transform: translateX(0);}
 }
 
-@mixin fadeInLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin fadeInLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(fadeInLeft);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

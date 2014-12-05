@@ -3,8 +3,9 @@
 	100% {opacity: 0; transform: translateX(-2000px);}
 }
 
-@mixin slideOutLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(slideOutLeft);
+@mixin slideOutLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideOutLeft);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

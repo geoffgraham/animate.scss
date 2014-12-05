@@ -10,8 +10,9 @@
   100% {-webkit-transform: translateX(0%);}
 }
 
-@mixin wobble($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin wobble($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(wobble);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

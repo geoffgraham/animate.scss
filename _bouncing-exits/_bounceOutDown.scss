@@ -4,8 +4,9 @@
   100% {opacity: 0; -webkit-transform: translateY(2000px);}
 }
 
-@mixin bounceOutDown($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin bounceOutDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(bounceOutDown);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

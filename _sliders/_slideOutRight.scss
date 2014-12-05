@@ -3,8 +3,9 @@
 	100% {opacity: 0; transform: translateX(2000px);}
 }
 
-@mixin slideOutRight($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(slideOutRight);
+@mixin slideOutRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideOutRight);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);

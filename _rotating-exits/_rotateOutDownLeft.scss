@@ -3,8 +3,9 @@
 	100% {transform-origin: left bottom; transform: rotate(90deg); opacity: 0;}
 }
 
-@mixin rotateOutDownLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(rotateOutDownLeft);
+@mixin rotateOutDownLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(rotateOutDownLeft);
+  @include count($count);
   @include duration($duration);
   @include delay($delay);
   @include function($function);
