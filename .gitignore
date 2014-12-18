@@ -1,3 +1,5 @@
 *.DS_Store
 index.html
 config.codekit
+*.sublime-project
+*.sublime-workspace
