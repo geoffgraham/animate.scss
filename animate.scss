@@ -5,16 +5,16 @@
 // @import this index into your project.
 // Comment out categories below to remove them from your project.
 // Or, @import specific partials (e.g. @import "_attention/_bounce.scss";
-// 
+//
 //-----------------------------------------------------------------------
 
 // Always required
-@import 
+@import
   "_properties";
 
 // Import the animations
-@import 
-  "_attention/attention.scss",
+@import
+  "_attention-seekers/attention-seekers.scss",
   "_bouncing-entrances/bouncing-entrances.scss",
   "_bouncing-exits/bouncing-exits.scss",
   "_fading-entrances/fading-entrances.scss",
@@ -23,7 +23,8 @@
   "_lightspeed/lightspeed.scss",
   "_rotating-entrances/rotating-entrances.scss",
   "_rotating-exits/rotating-exits.scss",
-  "_sliders/sliders.scss",
+  "_sliding-entrances/sliding-entrances.scss",
+  "_sliding-exits/sliding-exits.scss",
   "_specials/specials.scss",
   "_zooming-entrances/zooming-entrances.scss",
   "_zooming-exits/zooming-exits.scss";
