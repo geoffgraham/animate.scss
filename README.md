@@ -57,7 +57,7 @@ The mixin includes configurable options to customize the `delay`, `count` `durat
     $count: 2,
     $delay: .2s,
     $function: ease, 
-    $fill-mode: both
+    $fill: both
   );
 }
 ```
