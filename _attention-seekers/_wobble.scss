@@ -1,21 +1,21 @@
 // originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
-@include keyframes(wobble) {
-  0% {-webkit-transform: translateX(0%);}
-  15% {-webkit-transform: translateX(-25%) rotate(-5deg);}
-  30% {-webkit-transform: translateX(20%) rotate(3deg);}
-  45% {-webkit-transform: translateX(-15%) rotate(-3deg);}
-  60% {-webkit-transform: translateX(10%) rotate(2deg);}
-  75% {-webkit-transform: translateX(-5%) rotate(-1deg);}
-  100% {-webkit-transform: translateX(0%);}
+@keyframes wobble {
+  0% {transform: translateX(0%);}
+  15% {transform: translateX(-25%) rotate(-5deg);}
+  30% {transform: translateX(20%) rotate(3deg);}
+  45% {transform: translateX(-15%) rotate(-3deg);}
+  60% {transform: translateX(10%) rotate(2deg);}
+  75% {transform: translateX(-5%) rotate(-1deg);}
+  100% {transform: translateX(0%);}
 }
 
 @mixin wobble($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(wobble);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+	animation-name: wobble;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

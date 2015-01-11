@@ -1,4 +1,4 @@
-@include keyframes(hinge) {
+@keyframes hinge {
   0% {
     transform: rotate(0);
     transform-origin: top left;
@@ -27,11 +27,11 @@
 }
 
 @mixin hinge($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(hinge);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: hinge;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

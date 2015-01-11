@@ -1,14 +1,14 @@
-@include keyframes(fadeOutRightBig) {
+@keyframes fadeOutRightBig {
   0% {opacity: 1; transform: translateX(0);}
   100% {opacity: 0; transform: translateX(2000px);}
 }
 
 @mixin fadeOutRightBig($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(fadeOutRightBig);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: fadeOutRightBig;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

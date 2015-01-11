@@ -1,15 +1,15 @@
-@include keyframes(bounceOutUp) {
-	0% {-webkit-transform: translateY(0);}
-	20% {opacity: 1; -webkit-transform: translateY(20px);}
-	100% {opacity: 0; -webkit-transform: translateY(-2000px);}
+@keyframes bounceOutUp {
+	0% {transform: translateY(0);}
+	20% {opacity: 1; transform: translateY(20px);}
+	100% {opacity: 0; transform: translateY(-2000px);}
 }
 
 @mixin bounceOutUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(bounceOutUp);
-	@include count($count);
-   @include duration($duration);
-	@include delay($delay);
-	@include function($function);
-	@include fill-mode($fill);
-	@include visibility($visibility);
+	animation-name: bounceOutUp;
+	animation-iteration-count: $count;
+   animation-duration: $duration;
+	animation-delay: $delay;
+	animation-timing-function: $function;
+	animation-fill-mode: $fill;
+	backface-visibility: $visibility;
 }

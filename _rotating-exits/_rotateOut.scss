@@ -1,14 +1,14 @@
-@include keyframes(rotateOut) {
+@keyframes rotateOut {
 	0% {transform-origin: center center; transform: rotate(0); opacity: 1;}
 	100% {transform-origin: center center; transform: rotate(200deg); opacity: 0;}
 }
 
 @mixin rotateOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(rotateOut);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: rotateOut;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

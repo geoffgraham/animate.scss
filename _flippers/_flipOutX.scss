@@ -1,14 +1,14 @@
-@include keyframes(flipOutX) {
+@keyframes flipOutX {
   0% {transform: perspective(400px) rotateX(0deg); opacity: 1;}
   100% {transform: perspective(400px) rotateX(90deg); opacity: 0;}
 }
 
 @mixin flipOutX($count: $countDefult, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(flipOutX);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: flipOutX;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

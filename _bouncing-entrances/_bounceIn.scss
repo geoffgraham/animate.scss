@@ -1,16 +1,16 @@
-@include keyframes(bounceIn) {
-  0% {opacity: 0; -webkit-transform: scale(.3);}
-  50% {opacity: 1; -webkit-transform: scale(1.05);}
-  70% {-webkit-transform: scale(.9);}
-  100% {-webkit-transform: scale(1);}
+@keyframes bounceIn {
+  0% {opacity: 0; transform: scale(.3);}
+  50% {opacity: 1; transform: scale(1.05);}
+  70% {transform: scale(.9);}
+  100% {transform: scale(1);}
 }
 
 @mixin bounceIn($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(bounceIn);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: bounceIn;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

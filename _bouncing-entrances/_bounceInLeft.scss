@@ -1,16 +1,16 @@
-@include keyframes(bounceInLeft) {
-  0% {opacity: 0; -webkit-transform: translateX(-2000px);}
-  60% {opacity: 1; -webkit-transform: translateX(30px);}
-  80% {-webkit-transform: translateX(-10px);}
-  100% {-webkit-transform: translateX(0);}
+@keyframes bounceInLeft {
+  0% {opacity: 0; transform: translateX(-2000px);}
+  60% {opacity: 1; transform: translateX(30px);}
+  80% {transform: translateX(-10px);}
+  100% {transform: translateX(0);}
 }
 
 @mixin bounceInLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(bounceInLeft);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: bounceInLeft;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

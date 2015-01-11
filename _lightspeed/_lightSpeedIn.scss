@@ -1,4 +1,4 @@
-@include keyframes(lightSpeedIn) {
+@keyframes lightSpeedIn {
 	0% { transform: translateX(100%) skewX(-30deg); opacity: 0;}
 	60% { transform: translateX(-20%) skewX(30deg); opacity: 1;}
 	80% { transform: translateX(0%) skewX(-15deg); opacity: 1;}
@@ -6,12 +6,12 @@
 }
 
 @mixin lightSpeedIn($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(lightSpeedIn);
-  @include count($count);
-	@include function(ease-out);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: lightSpeedIn;
+  animation-iteration-count: $count;
+	animation-timing-function: ease-out;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

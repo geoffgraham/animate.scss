@@ -1,4 +1,4 @@
-@include keyframes(zoomOutLeft) {
+@keyframes zoomOutLeft {
   40% {
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
@@ -11,11 +11,11 @@
 }
 
 @mixin zoomOutLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(zoomOutLeft);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: zoomOutLeft;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

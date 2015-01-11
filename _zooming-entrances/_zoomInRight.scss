@@ -1,4 +1,4 @@
-@include keyframes(zoomInRight) {
+@keyframes zoomInRight {
   0% {
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
@@ -12,11 +12,11 @@
 }
 
 @mixin zoomInRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(zoomInRight);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: zoomInRight;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

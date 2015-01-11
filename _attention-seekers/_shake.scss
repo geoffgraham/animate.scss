@@ -1,15 +1,15 @@
-@include keyframes(shake) {
+@keyframes shake {
   0%, 100% {transform: translateX(0);}
 	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
 @mixin shake($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(shake);
-	@include count($count);
-	@include duration($duration);
-	@include delay($delay);
-	@include function($function);
-	@include fill-mode($fill);
-	@include visibility($visibility);
+	animation-name: shake;
+	animation-iteration-count: $count;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-timing-function: $function;
+	animation-fill-mode: $fill;
+	backface-visibility: $visibility;
 }

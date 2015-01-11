@@ -1,14 +1,14 @@
-@include keyframes(rotateIn) {
+@keyframes rotateIn {
   0% {transform-origin: center center; transform: rotate(-200deg); opacity: 0;}
   100% {transform-origin: center center; transform: rotate(0); opacity: 1;}
 }
 
 @mixin rotateIn($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(rotateIn);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: rotateIn;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }
