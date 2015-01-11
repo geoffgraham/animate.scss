@@ -1,17 +1,17 @@
 // originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
-@include keyframes(pulse) {
+@keyframes pulse {
 	0% {transform: scale(1);}
   50% {transform: scale(1.1);}
   100% {transform: scale(1);}
 }
 
 @mixin pulse($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(pulse);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: pulse;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

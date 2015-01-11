@@ -1,14 +1,14 @@
-@include keyframes(fadeInLeftBig) {
+@keyframes fadeInLeftBig {
     0% {opacity: 0; transform: translateX(-2000px);}
   100% {opacity: 1; transform: translateX(0);}
 }
 
 @mixin fadeInLeftBig($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(fadeInLeftBig);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: fadeInLeftBig;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

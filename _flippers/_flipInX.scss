@@ -1,4 +1,4 @@
-@include keyframes(flipInX) {
+@keyframes flipInX {
   0% {transform: perspective(400px) rotateX(90deg); opacity: 0;}
   40% {transform: perspective(400px) rotateX(-10deg);}
   70% {transform: perspective(400px) rotateX(10deg);}
@@ -6,11 +6,11 @@
 }
 
 @mixin flipInX($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(flipInX);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: flipInX;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

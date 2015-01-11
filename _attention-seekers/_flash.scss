@@ -1,14 +1,14 @@
-@include keyframes(flash) {
+@keyframes flash {
 	0%, 50%, 100% {opacity: 1;}
 	25%, 75% {opacity: 0;}
 }
 
 @mixin flash($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(flash);
-	@include count($count);
-   @include duration($duration);
-	@include delay($delay);
-	@include function($function);
-	@include fill-mode($fill);
-	@include visibility($visibility);
+	animation-name: flash;
+	animation-iteration-count: $count;
+  animation-duration: $duration;
+	animation-delay: $delay;
+	animation-timing-function: $function;
+	animation-fill-mode: $fill;
+	backface-visibility: $visibility;
 }

@@ -1,4 +1,4 @@
-@include keyframes(flip) {
+@keyframes flip {
   0% {transform: perspective(400px) rotateY(0); animation-timing-function: ease-out;}
   40% {transform: perspective(400px) translateZ(150px) rotateY(170deg); animation-timing-function: ease-out;}
   50% {transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); animation-timing-function: ease-in;}
@@ -7,12 +7,12 @@
 }
 
 @mixin flip($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include transform-style(preserve-3d);
-  @include animation-name(flip);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  transform-style: preserve-3d;
+  animation-name: flip;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }

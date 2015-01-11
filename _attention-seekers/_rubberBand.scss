@@ -1,4 +1,4 @@
-@include keyframes(rubberBand) {
+@keyframes rubberBand {
 	0% {
     transform: scale3d(1, 1, 1);
   }
@@ -29,11 +29,11 @@
 }
 
 @mixin rubberBand($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(rubberBand);
-  @include count($count);
-  @include duration($duration);
-	@include delay($delay);
-	@include function($function);
-	@include fill-mode($fill);
-	@include visibility($visibility);
+	animation-name: rubberBand;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+	animation-delay: $delay;
+	animation-timing-function: $function;
+	animation-fill-mode: $fill;
+	backface-visibility: $visibility;
 }

@@ -1,15 +1,14 @@
-@include keyframes(lightSpeedOut) {
+@keyframes lightSpeedOut {
   0% { transform: translateX(0%) skewX(0deg); opacity: 1;}
   100% { transform: translateX(100%) skewX(-30deg); opacity: 0;}
 }
 
 @mixin lightSpeedOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(lightSpeedOut);
-  @include count($count);
-  @include function(ease-in);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  animation-name: lightSpeedOut;
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  backface-visibility: $visibility;
 }
