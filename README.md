@@ -62,6 +62,85 @@ The mixin includes configurable options to customize the `delay`, `count` `durat
 }
 ```
 
+## Posible Animations
+
+```
+@include bounce();
+@include flash();
+@include pulse();
+@include rubberBand();
+@include shake();
+@include swing();
+@include tada();
+@include wobble();
+@include bounceIn();
+@include bounceInDown();
+@include bounceInLeft();
+@include bounceInRight();
+@include bounceInUp();
+@include bounceOut();
+@include bounceOutDown();
+@include bounceOutLeft();
+@include bounceOutRight();
+@include bounceOutUp();
+@include fadeIn();
+@include fadeInDown();
+@include fadeInDownBig();
+@include fadeInLeft();
+@include fadeInLeftBig();
+@include fadeInRight();
+@include fadeInRightBig();
+@include fadeInUp();
+@include fadeInUpBig();
+@include fadeOut();
+@include fadeOutDown();
+@include fadeOutDownBig();
+@include fadeOutLeft();
+@include fadeOutLeftBig();
+@include fadeOutRight();
+@include fadeOutRightBig();
+@include fadeOutUp();
+@include fadeOutUpBig();
+@include flip();
+@include flipInX();
+@include flipInY();
+@include flipOutX();
+@include flipOutY();
+@include lightSpeedIn();
+@include lightSpeedOut();
+@include rotateIn();
+@include rotateInDownLeft();
+@include rotateInDownRight();
+@include rotateInUpLeft();
+@include rotateInUpRight();
+@include rotateOut();
+@include rotateOutDownLeft();
+@include rotateOutDownRight();
+@include rotateOutUpLeft();
+@include rotateOutUpRight();
+@include slideInDown();
+@include slideInLeft();
+@include slideInRight();
+@include slideInUp();
+@include slideOutDown();
+@include slideOutLeft();
+@include slideOutRight();
+@include slideOutUp();
+@include hinge();
+@include rollIn();
+@include rollOut();
+@include zoomIn();
+@include zoomInDown();
+@include zoomInLeft();
+@include zoomInRight();
+@include zoomInUp();
+@include zoomOut();
+@include zoomOutDown();
+@include zoomOutLeft();
+@include zoomOutRight();
+@include zoomOutUp();
+```
+
 ## Just Want the CSS?
 
 You can have that too. Link up animate.css to your document `<head>` and add the animations like you would any class name.
