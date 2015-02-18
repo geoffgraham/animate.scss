@@ -1,6 +1,14 @@
 @include keyframes(rotateOutDownRight) {
-	0% {transform-origin: right bottom; transform: rotate(0); opacity: 1;}
-	100% {transform-origin: right bottom; transform: rotate(-90deg); opacity: 0;}
+	0% {
+  	opacity: 1;
+  	transform: rotate(0);
+  	transform-origin: right bottom;
+  }
+	100% {
+  	opacity: 0;
+  	transform: rotate(-90deg);
+  	transform-origin: right bottom;
+  }
 }
 
 @mixin rotateOutDownRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

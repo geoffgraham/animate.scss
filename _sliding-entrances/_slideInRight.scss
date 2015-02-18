@@ -1,6 +1,11 @@
 @include keyframes(slideInRight) {
-	0% {opacity: 0; transform: translateX(2000px);}
-	100% {transform: translateX(0);}
+	0% {
+  	opacity: 0;
+  	transform: translateX(2000px);
+  }
+	100% {
+  	transform: translateX(0);
+  }
 }
 
 @mixin slideInRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

@@ -6,7 +6,7 @@
 @mixin flash($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(flash);
 	@include count($count);
-   @include duration($duration);
+	@include duration($duration);
 	@include delay($delay);
 	@include function($function);
 	@include fill-mode($fill);

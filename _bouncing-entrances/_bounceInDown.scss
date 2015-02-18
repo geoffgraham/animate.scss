@@ -1,8 +1,18 @@
 @include keyframes(bounceInDown) {
-  0% {opacity: 0; transform: translateY(-2000px);}
-  60% {opacity: 1; transform: translateY(30px);}
-  80% {transform: translateY(-10px);}
-  100% {transform: translateY(0);}
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+    }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @mixin bounceInDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

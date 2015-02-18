@@ -9,7 +9,7 @@
 @mixin tada($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
 	@include animation-name(tada);
 	@include count($count);
-   @include duration($duration);
+	@include duration($duration);
 	@include delay($delay);
 	@include function($function);
 	@include fill-mode($fill);

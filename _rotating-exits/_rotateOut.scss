@@ -1,6 +1,14 @@
 @include keyframes(rotateOut) {
-	0% {transform-origin: center center; transform: rotate(0); opacity: 1;}
-	100% {transform-origin: center center; transform: rotate(200deg); opacity: 0;}
+	0% {
+  	opacity: 1;
+  	transform: rotate(0);
+  	transform-origin: center center;
+  }
+	100% {
+  	opacity: 0;
+  	transform: rotate(200deg);
+  	transform-origin: center center;
+  }
 }
 
 @mixin rotateOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

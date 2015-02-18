@@ -1,6 +1,12 @@
 @include keyframes(lightSpeedOut) {
-  0% { transform: translateX(0%) skewX(0deg); opacity: 1;}
-  100% { transform: translateX(100%) skewX(-30deg); opacity: 0;}
+  0% {
+    opacity: 1;
+    transform: translateX(0%) skewX(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%) skewX(-30deg);
+  }
 }
 
 @mixin lightSpeedOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

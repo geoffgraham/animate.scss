@@ -1,8 +1,18 @@
 @include keyframes(bounceOut) {
-  0% {transform: scale(1);}
-  25% {transform: scale(.95);}
-  50% {opacity: 1; transform: scale(1.1);}
-  100% {opacity: 0; transform: scale(.3);}
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  }
 }
 
 @mixin bounceOut($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

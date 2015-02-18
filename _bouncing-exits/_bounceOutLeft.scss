@@ -1,7 +1,15 @@
 @include keyframes(bounceOutLeft) {
-  0% {transform: translateX(0);}
-  20% {opacity: 1; transform: translateX(20px);}
-  100% {opacity: 0; transform: translateX(-2000px);}
+    0% {
+      transform: translateX(0);
+    }
+   20% {
+     opacity: 1;
+     transform: translateX(20px);
+    }
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
 }
 
 @mixin bounceOutLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

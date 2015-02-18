@@ -1,6 +1,11 @@
 @include keyframes(slideOutUp) {
-	0% {transform: translateY(0);}
-	100% {opacity: 0; transform: translateY(-2000px);}
+	0% {
+  	transform: translateY(0);
+  }
+	100% {
+  	opacity: 0;
+  	transform: translateY(-2000px);
+  }
 }
 
 @mixin slideOutUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {

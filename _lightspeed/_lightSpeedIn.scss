@@ -1,8 +1,20 @@
 @include keyframes(lightSpeedIn) {
-	0% { transform: translateX(100%) skewX(-30deg); opacity: 0;}
-	60% { transform: translateX(-20%) skewX(30deg); opacity: 1;}
-	80% { transform: translateX(0%) skewX(-15deg); opacity: 1;}
-	100% { transform: translateX(0%) skewX(0deg); opacity: 1;}
+	0% {
+  	opacity: 0;
+  	transform: translateX(100%) skewX(-30deg);
+  }
+	60% {
+  	opacity: 1;
+  	transform: translateX(-20%) skewX(30deg);
+  }
+	80% {
+  	opacity: 1;
+  	transform: translateX(0%) skewX(-15deg);
+  }
+	100% {
+  	opacity: 1;
+  	transform: translateX(0%) skewX(0deg);
+  }
 }
 
 @mixin lightSpeedIn($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
