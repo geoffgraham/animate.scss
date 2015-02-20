@@ -1,5 +1,5 @@
 @include keyframes(swing) {
-	20%, 40%, 60%, 80%, 100% {transform-origin: top center;}
+	20%, 40%, 60%, 80%, 100% {@include transform-origin(top center);}
 	20% {@include transform(rotate(15deg));}
 	40% {@include transform(rotate(-10deg));}
 	60% {@include transform(rotate(5deg));}

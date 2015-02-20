@@ -5,8 +5,8 @@
   }
   100% {
     opacity: 0;
-    transform-origin: left center;
     @include transform(scale(.1) translate3d(-2000px, 0, 0));
+    @include transform-origin(left center);
   }
 }
 

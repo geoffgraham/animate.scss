@@ -1,13 +1,13 @@
 @include keyframes(rotateIn) {
   0% {
     opacity: 0;
-    transform-origin: center center;
     @include transform(rotate(-200deg));
+    @include transform-origin(center center);
   }
   100% {
     opacity: 1;
-    transform-origin: center center;
     @include transform(rotate(0));
+    @include transform-origin(center center);
   }
 }
 
