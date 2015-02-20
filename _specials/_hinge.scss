@@ -1,28 +1,28 @@
 @include keyframes(hinge) {
   0% {
     animation-timing-function: ease-in-out;
-    transform: rotate(0);
-    transform-origin: top left;
+    @include transform(rotate(0));
+    @include transform-origin(top left);
   }
   20%, 60% {
     animation-timing-function: ease-in-out;
-    transform: rotate(80deg);
-    transform-origin: top left;
+    @include transform(rotate(80deg));
+    @include transform-origin(top left);
   }
   40% {
     animation-timing-function: ease-in-out;
-    transform: rotate(60deg);
-    transform-origin: top left;
+    @include transform(rotate(60deg));
+    @include transform-origin(top left);
   }
   80% {
     opacity: 1;
     animation-timing-function: ease-in-out;
-    transform: rotate(60deg) translateY(0);
-    transform-origin: top left;
+    @include transform(rotate(60deg) translateY(0));
+    @include transform-origin(top left);
   }
   100% {
     opacity: 0;
-    transform: translateY(700px);
+    @include transform(translateY(700px));
   }
 }
 

@@ -65,6 +65,14 @@ $visibilityDefault: hidden !default;
           backface-visibility: $visibility;
 }
 
+@mixin transform($property) {
+  -webkit-transform: $property;
+     -moz-transform: $property;
+      -ms-transform: $property;
+       -o-transform: $property;
+          transform: $property;
+}
+
 @mixin transform-origin($transform-origin: center center) {
   -webkit-transform-origin: $transform-origin;
      -moz-transform-origin: $transform-origin;

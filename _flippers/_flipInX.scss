@@ -1,17 +1,17 @@
 @include keyframes(flipInX) {
   0% {
     opacity: 0;
-    transform: perspective(400px) rotateX(90deg);
+    @include transform(perspective(400px) rotateX(90deg));
   }
   40% {
-    transform: perspective(400px) rotateX(-10deg);
+    @include transform(perspective(400px) rotateX(-10deg));
   }
   70% {
-    transform: perspective(400px) rotateX(10deg);
+    @include transform(perspective(400px) rotateX(10deg));
   }
   100% {
     opacity: 1;
-    transform: perspective(400px) rotateX(0deg);
+    @include transform(perspective(400px) rotateX(0deg));
   }
 }
 

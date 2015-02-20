@@ -4,7 +4,7 @@
   }
   50% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    @include transform(scale3d(.3, .3, .3));
   }
   100% {
     opacity: 0;

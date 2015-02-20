@@ -1,11 +1,11 @@
 @include keyframes(fadeInDownBig) {
   0% {
     opacity: 0;
-    transform: translateY(-2000px);
+    @include transform(translateY(-2000px));
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    @include transform(translateY(0));
   }
 }
 
