@@ -1,14 +1,14 @@
 @include keyframes(bounceOutLeft) {
     0% {
-      transform: translateX(0);
+      @include transform(translateX(0));
     }
    20% {
      opacity: 1;
-     transform: translateX(20px);
+     @include transform(translateX(20px));
     }
   100% {
     opacity: 0;
-    transform: translateX(-2000px);
+    @include transform(translateX(-2000px));
   }
 }
 

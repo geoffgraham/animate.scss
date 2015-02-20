@@ -1,11 +1,11 @@
 @include keyframes(flipOutX) {
   0% {
     opacity: 1;
-    transform: perspective(400px) rotateX(0deg);
+    @include transform(perspective(400px) rotateX(0deg));
   }
   100% {
     opacity: 0;
-    transform: perspective(400px) rotateX(90deg);
+    @include transform(perspective(400px) rotateX(90deg));
   }
 }
 

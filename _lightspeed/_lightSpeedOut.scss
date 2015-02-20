@@ -1,11 +1,11 @@
 @include keyframes(lightSpeedOut) {
   0% {
     opacity: 1;
-    transform: translateX(0%) skewX(0deg);
+    @include transform(translateX(0%) skewX(0deg));
   }
   100% {
     opacity: 0;
-    transform: translateX(100%) skewX(-30deg);
+    @include transform(translateX(100%) skewX(-30deg));
   }
 }
 

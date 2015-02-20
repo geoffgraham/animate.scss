@@ -1,9 +1,9 @@
 // originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
 @include keyframes(pulse) {
-	  0% {transform: scale(1);}
-   50% {transform: scale(1.1);}
-  100% {transform: scale(1);}
+	  0% {@include transform(scale(1));}
+   50% {@include transform(scale(1.1));}
+  100% {@include transform(scale(1));}
 }
 
 @mixin pulse($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
