@@ -12,6 +12,10 @@ Also, I was looking for something a little more flexible. This version allows yo
 
 The default import includes all animations. 
 
+````
+bower install animate.css-scss
+````
+
 ```
 @import "animate.scss";
 ```
