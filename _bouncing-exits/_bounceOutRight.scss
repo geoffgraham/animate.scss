@@ -1,14 +1,16 @@
-@include keyframes(bounceOutRight) {
-    0% {
-      @include transform(translateX(0));
+@if $use-bounceOutUp == true {
+  @include keyframes(bounceOutRight) {
+      0% {
+        @include transform(translateX(0));
+      }
+     20% {
+       opacity: 1;
+       @include transform(translateX(-20px));
+      }
+    100% {
+      opacity: 0;
+      @include transform(translateX(2000px));
     }
-   20% {
-     opacity: 1;
-     @include transform(translateX(-20px));
-    }
-  100% {
-    opacity: 0;
-    @include transform(translateX(2000px));
   }
 }
 

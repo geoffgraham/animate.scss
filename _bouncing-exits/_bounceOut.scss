@@ -1,17 +1,19 @@
-@include keyframes(bounceOut) {
-  0% {
-    @include transform(scale(1));
-  }
-  25% {
-    @include transform(scale(.95));
-  }
-  50% {
-    opacity: 1;
-    @include transform(scale(1.1));
-  }
-  100% {
-    opacity: 0;
-    @include transform(scale(.3));
+@if $use-bounceOut == true {
+  @include keyframes(bounceOut) {
+    0% {
+      @include transform(scale(1));
+    }
+    25% {
+      @include transform(scale(.95));
+    }
+    50% {
+      opacity: 1;
+      @include transform(scale(1.1));
+    }
+    100% {
+      opacity: 0;
+      @include transform(scale(.3));
+    }
   }
 }
 

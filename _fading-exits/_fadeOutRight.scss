@@ -1,11 +1,13 @@
-@include keyframes(fadeOutRight) {
-  0% {
-    opacity: 1;
-    @include transform(translateX(0));
-  }
-  100% {
-    opacity: 0;
-    @include transform(translateX(20px));
+@if $use-fadeOutRight == true {
+  @include keyframes(fadeOutRight) {
+    0% {
+      opacity: 1;
+      @include transform(translateX(0));
+    }
+    100% {
+      opacity: 0;
+      @include transform(translateX(20px));
+    }
   }
 }
 

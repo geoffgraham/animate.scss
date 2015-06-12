@@ -1,17 +1,19 @@
-@include keyframes(flipInX) {
-  0% {
-    opacity: 0;
-    @include transform(perspective(400px) rotateX(90deg));
-  }
-  40% {
-    @include transform(perspective(400px) rotateX(-10deg));
-  }
-  70% {
-    @include transform(perspective(400px) rotateX(10deg));
-  }
-  100% {
-    opacity: 1;
-    @include transform(perspective(400px) rotateX(0deg));
+@if $use-flipInX == true {
+  @include keyframes(flipInX) {
+    0% {
+      opacity: 0;
+      @include transform(perspective(400px) rotateX(90deg));
+    }
+    40% {
+      @include transform(perspective(400px) rotateX(-10deg));
+    }
+    70% {
+      @include transform(perspective(400px) rotateX(10deg));
+    }
+    100% {
+      opacity: 1;
+      @include transform(perspective(400px) rotateX(0deg));
+    }
   }
 }
 

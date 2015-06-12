@@ -1,13 +1,15 @@
-@include keyframes(rotateOutUpLeft) {
-	0% {
-  	opacity: 1;
-  	@include transform(rotate(0));
-  	@include transform-origin(left bottom);
-  }
- 100% {
-   opacity: 0;
-   @include transform(rotate(-90deg));
-   @include transform-origin(left bottom);
+@if $use-rotateOutUpLeft == true {
+  @include keyframes(rotateOutUpLeft) {
+  	0% {
+    	opacity: 1;
+    	@include transform(rotate(0));
+    	@include transform-origin(left bottom);
+    }
+   100% {
+     opacity: 0;
+     @include transform(rotate(-90deg));
+     @include transform-origin(left bottom);
+    }
   }
 }
 

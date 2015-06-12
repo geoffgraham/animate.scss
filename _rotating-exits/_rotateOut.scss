@@ -1,13 +1,15 @@
-@include keyframes(rotateOut) {
-	0% {
-  	opacity: 1;
-  	@include transform(rotate(0));
-  	@include transform-origin(center center);
-  }
-	100% {
-  	opacity: 0;
-  	@include transform(rotate(200deg));
-  	@include transform-origin(center center);
+@if $use-rotateOut == true {
+  @include keyframes(rotateOut) {
+  	0% {
+    	opacity: 1;
+    	@include transform(rotate(0));
+    	@include transform-origin(center center);
+    }
+  	100% {
+    	opacity: 0;
+    	@include transform(rotate(200deg));
+    	@include transform-origin(center center);
+    }
   }
 }
 

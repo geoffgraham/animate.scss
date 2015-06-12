@@ -1,10 +1,12 @@
-@include keyframes(zoomIn) {
-  0% {
-    opacity: 0;
-    @include transform(scale3d(.3, .3, .3));
-  }
-  50% {
-    opacity: 1;
+@if $use-zoomIn == true {
+  @include keyframes(zoomIn) {
+    0% {
+      opacity: 0;
+      @include transform(scale3d(.3, .3, .3));
+    }
+    50% {
+      opacity: 1;
+    }
   }
 }
 

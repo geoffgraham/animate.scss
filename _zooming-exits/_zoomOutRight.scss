@@ -1,12 +1,14 @@
-@include keyframes(zoomOutRight) {
-  40% {
-    opacity: 1;
-    @include transform(scale3d(.475, .475, .475) translate3d(-42px, 0, 0));
-  }
-  100% {
-    opacity: 0;
-    @include transform(scale(.1) translate3d(2000px, 0, 0));
-    @include transform-origin(right center);
+@if $use-zoomOutRight == true {
+  @include keyframes(zoomOutRight) {
+    40% {
+      opacity: 1;
+      @include transform(scale3d(.475, .475, .475) translate3d(-42px, 0, 0));
+    }
+    100% {
+      opacity: 0;
+      @include transform(scale(.1) translate3d(2000px, 0, 0));
+      @include transform-origin(right center);
+    }
   }
 }
 

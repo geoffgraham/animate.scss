@@ -1,17 +1,19 @@
-@include keyframes(bounceIn) {
-  0% {
-    opacity: 0;
-    @include transform(scale(.3));
-  }
-  50% {
-    opacity: 1;
-    @include transform(scale(1.05));
-  }
-  70% {
-	@include transform(scale(.9));
-  }
-  100% {
-	@include transform(scale(1));
+@if $use-bounceIn == true {
+  @include keyframes(bounceIn) {
+    0% {
+      opacity: 0;
+      @include transform(scale(.3));
+    }
+    50% {
+      opacity: 1;
+      @include transform(scale(1.05));
+    }
+    70% {
+  	@include transform(scale(.9));
+    }
+    100% {
+  	@include transform(scale(1));
+    }
   }
 }
 

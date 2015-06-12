@@ -1,13 +1,14 @@
 // originally authored by Nick Pettit - https://github.com/nickpettit/glide
-
-@include keyframes(rollOut) {
-  0% {
-    opacity: 1;
-    @include transform(translateX(0px) rotate(0deg));
-  }
-  100% {
-    opacity: 0;
-    @include transform(translateX(100%) rotate(120deg));
+@if $use-rollOut == true {
+  @include keyframes(rollOut) {
+    0% {
+      opacity: 1;
+      @include transform(translateX(0px) rotate(0deg));
+    }
+    100% {
+      opacity: 0;
+      @include transform(translateX(100%) rotate(120deg));
+    }
   }
 }
 

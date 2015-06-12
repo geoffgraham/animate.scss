@@ -1,11 +1,13 @@
-@include keyframes(flipOutX) {
-  0% {
-    opacity: 1;
-    @include transform(perspective(400px) rotateX(0deg));
-  }
-  100% {
-    opacity: 0;
-    @include transform(perspective(400px) rotateX(90deg));
+@if $use-flipOutX == true {
+  @include keyframes(flipOutX) {
+    0% {
+      opacity: 1;
+      @include transform(perspective(400px) rotateX(0deg));
+    }
+    100% {
+      opacity: 0;
+      @include transform(perspective(400px) rotateX(90deg));
+    }
   }
 }
 

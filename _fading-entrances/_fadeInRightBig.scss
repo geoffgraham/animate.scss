@@ -1,11 +1,13 @@
-@include keyframes(fadeInRightBig) {
-  0% {
-    opacity: 0;
-    @include transform(translateX(2000px));
-  }
-  100% {
-    opacity: 1;
-    @include transform(translateX(0));
+@if $use-fadeInRightBig == true {
+  @include keyframes(fadeInRightBig) {
+    0% {
+      opacity: 0;
+      @include transform(translateX(2000px));
+    }
+    100% {
+      opacity: 1;
+      @include transform(translateX(0));
+    }
   }
 }
 

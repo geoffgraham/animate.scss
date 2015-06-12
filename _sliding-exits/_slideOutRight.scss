@@ -1,10 +1,12 @@
-@include keyframes(slideOutRight) {
-	0% {
-  	@include transform(translateX(0));
-  }
-	100% {
-  	opacity: 0;
-  	@include transform(translateX(2000px));
+@if $use-slideOutRight == true {
+  @include keyframes(slideOutRight) {
+  	0% {
+    	@include transform(translateX(0));
+    }
+  	100% {
+    	opacity: 0;
+    	@include transform(translateX(2000px));
+    }
   }
 }
 
