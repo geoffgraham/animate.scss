@@ -10,6 +10,11 @@ Also, I was looking for something a little more flexible. This version allows yo
 
 ## Installing
 
+Grab it with Bower
+````
+bower install animate.css-scss
+````
+
 The default import includes all animations. 
 
 ```
