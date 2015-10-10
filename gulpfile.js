@@ -15,11 +15,20 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(''));
 });
 
-gulp.task('css', function() {
+gulp.task('css-sourcemap', function() {
   return gulp.src('animate.css')
     .pipe(sourcemaps.init())
     .pipe(minifyCss())
     .pipe(sourcemaps.write())
+    .pipe(rename({
+      extname: '.min.map.css'
+    }))
+    .pipe(gulp.dest(''));
+});
+
+gulp.task('css', function() {
+  return gulp.src('animate.css')
+    .pipe(minifyCss())
     .pipe(rename({
       extname: '.min.css'
     }))
@@ -27,7 +36,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('**/*.scss', ['sass', 'css']);
+  gulp.watch('**/*.scss', ['sass', 'css-sourcemap', 'css']);
 });
 
 gulp.task('default', ['watch']);
