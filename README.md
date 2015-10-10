@@ -15,7 +15,7 @@ Grab it with Bower
 bower install animate.css-scss
 ````
 
-The default import includes all animations. 
+The default import includes all animations.
 
 ```
 @import "animate.scss";
@@ -25,11 +25,11 @@ Want to pick and choose which animations are imported? Go into animate.scss and 
 
 ```
 // Always required
-@import 
+@import
   "_properties";
 
 // Import the animations
-@import 
+@import
   // "_attention/attention.scss", // This will not import
   "_bouncing-entrances/bouncing-entrances.scss",
   "_bouncing-exits/bouncing-exits.scss",
@@ -61,11 +61,20 @@ The mixin includes configurable options to customize the `delay`, `count` `durat
     $duration: 1s,
     $count: 2,
     $delay: .2s,
-    $function: ease, 
+    $function: ease,
     $fill: both
   );
 }
 ```
+
+## Gulp
+
+We have included Gulp into the project to automate changes in the scss files. If you want to get started follow these simpel steps.
+
+1. Download [nodejs](https://nodejs.org/en/) locally to you're computer.
+2. Download Gulps command line through the command line using ```npm install --global gulp```. More [info](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+3. Go the current directory of the root of this project and download all the Gulp packages by ```npm install```
+4. You are good to go. Run the command ```gulp``` that will watch for changes.
 
 ## Just Want the CSS?
 

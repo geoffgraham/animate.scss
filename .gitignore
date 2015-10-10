@@ -4,3 +4,4 @@ config.codekit
 *.sublime-project
 *.sublime-workspace
 .sass-cache
+node_modules
