@@ -30,7 +30,7 @@ Want to pick and choose which animations are imported? Go into animate.scss and 
 
 // Import the animations
 @import 
-  // "_attention/attention.scss", // This will not import
+  // "_attention-seekers/attention-seekers.scss", // This will not import
   "_bouncing-entrances/bouncing-entrances.scss",
   "_bouncing-exits/bouncing-exits.scss",
   "_fading-entrances/fading-entrances.scss",
@@ -41,15 +41,23 @@ Want to pick and choose which animations are imported? Go into animate.scss and 
   "_rotating-exits/rotating-exits.scss",
   "_specials/specials.scss";
 ```
-You only want one of two of the animations? You can `@import` the specific partials in animate.scss instead (Example: `@import "_attention/_bounce";`).
+You only want one of two of the animations? You can `@import` the specific partials in animate.scss instead (Example: `@import "_attention-seekers/_bounce";`).
 
-## Usage
+## Installing with NPM/Yarn
+
+Grab it with NPM/Yarn
+````
+npm install animatewithsass
+yarn add animatewithsass
+````
+
+## Usage with bower
 
 Once your files have been added to your project and you've customized your `@imports`, you can start including the animations directly to your classes.
 
 ```
 .your-class-name {
-  @include bounceIn();
+  @include bounce();
 }
 ```
 
@@ -57,7 +65,44 @@ The mixin includes configurable options to customize the `delay`, `count` `durat
 
 ```
 .your-class-name {
-  @include bounceIn(
+  @include bounce(
+    $duration: 1s,
+    $count: 2,
+    $delay: .2s,
+    $function: ease, 
+    $fill: both
+  );
+}
+```
+
+## Usage with NPM/Yarn
+
+Once you have installed/added the necessary file to your project you can start including the animations directly in your scss-file and/or component.
+
+You can use the default import with all animations in your scss-styles via:
+
+```
+@import 'animatewithsass/animate.scss';
+```
+
+If you only want to use specific animations in your scss-file and/or component you can only import the specific animation via:
+
+```
+@import 'animatewithsass/_properties'; // always required
+@import "animatewithsass/_attention-seekers/bounce";
+```
+
+```
+.your-class-name {
+  @include bounce();
+}
+```
+
+The mixin includes configurable options to customize the `delay`, `count` `duration`, `function` and `fill-mode` of your animations.
+
+```
+.your-class-name {
+  @include bounce(
     $duration: 1s,
     $count: 2,
     $delay: .2s,
