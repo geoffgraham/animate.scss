@@ -30,7 +30,7 @@ Want to pick and choose which animations are imported? Go into animate.scss and 
 
 // Import the animations
 @import 
-  // "_attention/attention.scss", // This will not import
+  // "_attention-seekers/attention-seekers.scss", // This will not import
   "_bouncing-entrances/bouncing-entrances.scss",
   "_bouncing-exits/bouncing-exits.scss",
   "_fading-entrances/fading-entrances.scss",
@@ -41,7 +41,7 @@ Want to pick and choose which animations are imported? Go into animate.scss and 
   "_rotating-exits/rotating-exits.scss",
   "_specials/specials.scss";
 ```
-You only want one of two of the animations? You can `@import` the specific partials in animate.scss instead (Example: `@import "_attention/_bounce";`).
+You only want one of two of the animations? You can `@import` the specific partials in animate.scss instead (Example: `@import "_attention-seekers/_bounce";`).
 
 ## Usage
 
@@ -49,7 +49,7 @@ Once your files have been added to your project and you've customized your `@imp
 
 ```
 .your-class-name {
-  @include bounceIn();
+  @include bounce();
 }
 ```
 
@@ -57,7 +57,7 @@ The mixin includes configurable options to customize the `delay`, `count` `durat
 
 ```
 .your-class-name {
-  @include bounceIn(
+  @include bounce(
     $duration: 1s,
     $count: 2,
     $delay: .2s,
