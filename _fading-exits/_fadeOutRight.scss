@@ -1,4 +1,7 @@
+@use '../properties' as *;
+
 @include keyframes(fadeOutRight) {
+
   0% {
     opacity: 1;
     @include transform(translateX(0));

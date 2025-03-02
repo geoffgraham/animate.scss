@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(rubberBand) {
 	  0% {@include transform(scale3d(1, 1, 1));}
    30% {@include transform(scale3d(1.25, 0.75, 1));}

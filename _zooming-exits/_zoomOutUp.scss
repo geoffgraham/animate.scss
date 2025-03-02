@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(zoomOutUp) {
   40% {
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);

@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(hinge) {
   0% {
     animation-timing-function: ease-in-out;

@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(tada) {
 	0% {@include transform(scale(1));}
 	10%, 20% {@include transform(scale(0.9) rotate(-3deg));}

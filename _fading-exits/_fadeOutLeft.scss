@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(fadeOutLeft) {
   0% {
     opacity: 1;

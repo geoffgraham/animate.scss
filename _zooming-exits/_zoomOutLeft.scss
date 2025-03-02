@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(zoomOutLeft) {
   40% {
     opacity: 1;

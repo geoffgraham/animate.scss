@@ -1,4 +1,5 @@
 // originally authored by Nick Pettit - https://github.com/nickpettit/glide
+@use '../properties' as *;
 
 @include keyframes(jello) {
   11.1% {@include transform(none);}

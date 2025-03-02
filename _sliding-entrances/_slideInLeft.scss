@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(slideInLeft) {
   0% {
     opacity: 0;

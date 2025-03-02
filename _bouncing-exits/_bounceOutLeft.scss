@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(bounceOutLeft) {
     0% {
       @include transform(translateX(0));

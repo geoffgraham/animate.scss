@@ -1,6 +1,5 @@
 // INDEX OF SPECIAL ANIMATIONS
 
-@import 
-  "_hinge",
-  "_rollIn",
-  "_rollOut";
+@forward "hinge";
+@forward "rollIn";
+@forward "rollOut";
