@@ -24,24 +24,21 @@ The default import includes all animations.
 Want to pick and choose which animations are imported? Go into animate.scss and comment out what you don't need.
 
 ```
-// Always required
-@import 
-  "_properties";
-
 // Import the animations
-@import 
   // "_attention-seekers/attention-seekers.scss", // This will not import
-  "_bouncing-entrances/bouncing-entrances.scss",
-  "_bouncing-exits/bouncing-exits.scss",
-  "_fading-entrances/fading-entrances.scss",
-  "_fading-exits/fading-exits.scss",
-  "_flippers/flippers.scss",
-  "_lightspeed/lightspeed.scss",
-  "_rotating-entrances/rotating-entrances.scss",
-  "_rotating-exits/rotating-exits.scss",
-  "_specials/specials.scss";
+@use "_bouncing-entrances/bouncing-entrances.scss" as entrances;
+@use "_bouncing-exits/bouncing-exits.scss" as *;
+@use "_fading-entrances/fading-entrances.scss" as *;
+@use "_fading-exits/fading-exits.scss" as *;
+@use "_flippers/flippers.scss" as *;
+@use "_lightspeed/lightspeed.scss" as *;
+@use "_rotating-entrances/rotating-entrances.scss" as *;
+@use "_rotating-exits/rotating-exits.scss" as *;
+@use "_specials/specials.scss" as *;
 ```
-You only want one of two of the animations? You can `@import` the specific partials in animate.scss instead (Example: `@import "_attention-seekers/_bounce";`).
+You only want one of two of the animations? You can `@use` the mixins specific
+    to partials in animate.scss instead (Example: `@use "_attention-seekers/bounce" as *;`) 
+    and `@forward` `properties` to export the referenced keyframes.
 
 ## Usage
 
