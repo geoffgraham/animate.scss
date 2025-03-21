@@ -1,9 +1,8 @@
 // INDEX OF ZOOMING EXITS
 
-@import
-  "_zoomOut",
-  "_zoomOutDown",
-  "_zoomOutLeft",
-  "_zoomOutRight",
-  "_zoomOutUp";
+@forward "zoomOut";
+@forward "zoomOutDown";
+@forward "zoomOutLeft";
+@forward "zoomOutRight";
+@forward "zoomOutUp";
   

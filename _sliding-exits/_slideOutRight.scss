@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(slideOutRight) {
 	0% {
   	@include transform(translateX(0));

@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(bounceInDown) {
   0% {
     opacity: 0;

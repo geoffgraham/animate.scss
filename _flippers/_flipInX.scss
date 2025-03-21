@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(flipInX) {
   0% {
     opacity: 0;

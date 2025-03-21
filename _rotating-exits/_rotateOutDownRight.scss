@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(rotateOutDownRight) {
 	0% {
   	opacity: 1;

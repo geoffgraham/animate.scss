@@ -1,8 +1,7 @@
 // INDEX OF FLIPPERS
 
-@import 
-  "_flip",
-  "_flipInX",
-  "_flipInY",
-  "_flipOutX",
-  "_flipOutY";
+@forward "flip";
+@forward "flipInX";
+@forward "flipInY";
+@forward "flipOutX";
+@forward "flipOutY";

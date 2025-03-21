@@ -8,12 +8,8 @@
 //
 //-----------------------------------------------------------------------
 
-// Always required
-@import
-  "_properties";
-
 // Import the animations
-@import
+@forward
   "_attention-seekers/attention-seekers.scss",
   "_bouncing-entrances/bouncing-entrances.scss",
   "_bouncing-exits/bouncing-exits.scss",

@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(bounceOut) {
   0% {
     @include transform(scale(1));

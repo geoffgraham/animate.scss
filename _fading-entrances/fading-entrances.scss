@@ -1,13 +1,12 @@
 // INDEX OF FADING ENTRANCES
 
-@import 
-  "_fadeIn",
-  "_fadeInDown",
-  "_fadeInDownBig",
-  "_fadeInLeft",
-  "_fadeInLeftBig",
-  "_fadeInRight",
-  "_fadeInRightBig",
-  "_fadeInUp",
-  "_fadeInUpBig";
+@forward "fadeIn";
+@forward "fadeInDown";
+@forward "fadeInDownBig";
+@forward "fadeInLeft";
+@forward "fadeInLeftBig";
+@forward "fadeInRight";
+@forward "fadeInRightBig";
+@forward "fadeInUp";
+@forward "fadeInUpBig";
   

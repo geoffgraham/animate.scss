@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(lightSpeedOut) {
   0% {
     opacity: 1;

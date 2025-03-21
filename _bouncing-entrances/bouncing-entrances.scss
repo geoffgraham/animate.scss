@@ -1,9 +1,8 @@
 // INDEX OF BOUNCING ENTRANCES
 
-@import
-  "_bounceIn",
-  "_bounceInDown",
-  "_bounceInLeft",
-  "_bounceInRight",
-  "_bounceInUp";
+@forward "bounceIn";
+@forward "bounceInDown";
+@forward "bounceInLeft";
+@forward "bounceInRight";
+@forward "bounceInUp";
   

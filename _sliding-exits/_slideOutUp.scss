@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(slideOutUp) {
 	0% {
   	@include transform(translateY(0));

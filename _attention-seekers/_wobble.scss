@@ -1,4 +1,5 @@
 // originally authored by Nick Pettit - https://github.com/nickpettit/glide
+@use '../properties' as *;
 
 @include keyframes(wobble) {
     0% {@include transform(translateX(0%));}

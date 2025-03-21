@@ -1,3 +1,5 @@
+@use '../properties' as *;
+
 @include keyframes(shake) {
   0%, 100% {@include transform(translateX(0));}
 	10%, 30%, 50%, 70%, 90% {@include transform(translateX(-10px));}

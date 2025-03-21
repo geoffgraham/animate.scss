@@ -1,7 +1,6 @@
 // INDEX OF SLIDING EXITS
 
-@import
-  "_slideOutDown",
-  "_slideOutLeft",
-  "_slideOutRight",
-  "_slideOutUp";
+@forward "slideOutDown";
+@forward "slideOutLeft";
+@forward "slideOutRight";
+@forward "slideOutUp";
